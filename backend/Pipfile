@@ -11,6 +11,7 @@ mysql-connector-python = "*"
 pymysql = "*"
 flask = "*"
 marshmallow = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.8"
