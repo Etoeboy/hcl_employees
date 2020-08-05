@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String
-
+from marshmallow import Schema, fields
 from .entity import Entity, Base
 
 
@@ -13,3 +13,11 @@ class Employee(Entity, Base):
         Entity.__init__(self, created_by)
         self.full_name = full_name 
         self.phone_number = phone_number
+
+class EmployeeSchema(Schema):
+    id = fields.Number()
+    full_name = fields.Str()
+    phone_number = fields.Str()
+    created_at = fields.DateTime()
+    updated_at = fields.DateTime()
+    last_updated_by = fields.Str()
