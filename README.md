@@ -11,3 +11,5 @@ from the back end to show visitors.
 
 To create and start the python virtual environment one simply needs to install pipenv on their local machine and run 'pipenv install' .
 This should then download the required dependencies from the pipfile.
+
+Then run /backend/src/main.py to start the Flask application and backend server. Then you can run 'ng serve' in front end directory to start the front end SPA.
