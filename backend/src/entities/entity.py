@@ -3,10 +3,10 @@ from sqlalchemy import create_engine, Column, String, Integer, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-db_url = 'localhost:3306'
-db_name = 'office'
-db_user = 'root'
-db_password = 'Jayboy96!'
+db_url = '---------'
+db_name = '------'
+db_user = '----'
+db_password = '-------'
 engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_url}/{db_name}')
 Session = sessionmaker(bind=engine)
 
